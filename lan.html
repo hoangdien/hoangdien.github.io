@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://c1.staticflickr.com/2/1977/31093811728_e6232fdd74_k.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+/**/
+@font-face {
+font-family: 'Aquarelle';
+src: url('https://rawgit.com/hoangdien1402/css/master/UTM Aquarelle.eot');
+src: url('https://rawgit.com/hoangdien1402/css/master/UTM Aquarelle.eot?#iefix') format('embedded-opentype'), url('https://rawgit.com/hoangdien1402/css/master/UTM Aquarelle.woff') format('woff'), url('https://rawgit.com/hoangdien1402/css/master/UTM Aquarelle.ttf') format('truetype'), url('https://rawgit.com/hoangdien1402/css/master/UTM Aquarelle.svg') format('svg');
+}
+.vietnam {
+font-family: 'Aquarelle';
+color: #ffffff;
+font-size: 50px;
+font-weight: 700;
+}
+.vietnam1 {
+font-family: 'Aquarelle';
+font-weight: 700;
+font-size: 40px;
+}
+.vietnam4 {
+font-family: 'Aquarelle';
+font-weight: 700;
+}
+.vietnam2 {
+font-family: 'Aquarelle';
+color: #ffffff;
+font-size: 30px;
+font-weight: 700;
+}
+.vietnam3 {
+font-family: 'Aquarelle';
+font-size: 25px;
+font-weight: 700;
+}
+.vietnam5 {
+font-family: 'Aquarelle';
+font-size: 18px;
+font-weight: 700;
+}
+.w3-display-middle {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+</style>
+<body>
+  <!-- Sidebar -->
+<nav class="w3-sidebar w3-blue-grey w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-blue-grey w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove" style="padding: 20px;"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-light-grey">ALBUM</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-light-grey">VIDEO</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-light-grey">BAN BE</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-light-grey">Contact</a>
+  </div>
+</nav>
+<!--  -->
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topright w3-padding-large w3-xlarge">
+    <img onclick="w3_open()" src="ac.png">
+  </div>
+  <div class="w3-display-middle">
+        <div class="w3-jumbo w3-animate-top w3-wide w3-text-light-grey w3-center">
+          <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge vietnam">
+          Diện  &#9825; Lan</h1>
+          <h5 class="w3-hide-large vietnam2" style="white-space: nowrap;">
+          Diện  &#9825; Lan</h5>
+          
+</div>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">
+      <h3 class="w3-hide-medium w3-hide-small vietnam1 w3-center">
+          25/09/2018</h3>
+          <h3 class="w3-hide-medium w3-hide-large vietnam5 w3-center">
+          25/09/2018</h3>
+    </p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+   Thiết kế bởi <b>Hoàng Diện</b>
+  </div>
+</div>
+ 
+<script>
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
