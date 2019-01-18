@@ -7,8 +7,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- jsDeliver -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    <script type="text/javascript" src="jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="jquery.lazy.plugins.min.js"></script>
                 
 <script type="text/javascript" charset="utf-8">
 	$(function() {
@@ -33,183 +33,85 @@
 	margin-right: 4px;
 	padding: 8px 16px 8px 0px;
 }
+.w3-tag.w3-round.w3-green {
+    float: right;
+}
+.footer {
+    position: fixed;
+    left: -5px;
+    bottom: 5px;
+    width: 100%;
+}
+
+/*modal*/
 </style>
 <body>
-
   <!-- Header -->
   <header id="portfolio">   
-    <div class="w3-container">
+    <div class="w3-container ">
     <div class="w3-section w3-bottombar w3-padding-16 album">
+    	<button style="padding:8px 14px;" class='w3-button w3-blue'><a style="text-decoration: none;" href="https://hoangdien.github.io/">Trang chủ</a></button>
+    	<span class="albums">
+    		
+    	</span>
+
     	<!--  -->
-<script>
-var url = "https://spreadsheets.google.com/feeds/list/13M-RYiYPtWGfMPaNzUykLdbMvPrfm9L20AFIhkrgKSg/1/public/values?alt=json";                     
+<script>                 
 $.getJSON("https://spreadsheets.google.com/feeds/list/1SHR1PihnEvGm7NUEbB7XDSrdCoqJw05ZLFgGuFIeWiY/1/public/values?alt=json", function(data) {
   var entry = data.feed.entry;
+  var stt=1;
   $(entry).each(function(){
-    $('.album').prepend("<button data-key='"+this.gsx$id.$t+"' class='w3-button w3-blue-grey'><i class='fa fa-diamond w3-margin-right'></i>"+this.gsx$album.$t+"</button>");
+    $('.albums').prepend("<button id='"+stt+"' onclick='album("+stt+")' key='"+this.gsx$id.$t+"' class='w3-button w3-blue-grey'><i class='fa fa-diamond w3-margin-right'></i>"+this.gsx$album.$t+"</button>");
+  stt++;
   });
 
  });
  
 </script>
+<script>
+    function album(b) {
+    	$('#abc').empty();
+     var name = $('#'+b).attr('key');
+		     $.getJSON("https://spreadsheets.google.com/feeds/list/"+name+"/1/public/values?alt=json", function(datas) {
+		  var entrys = datas.feed.entry;
+		  $(entrys).each(function(){
+		    $('#abc').append("<img class='lazy' onclick='onClick(this)' src='https://raw.githubusercontent.com/hoangdien/"+this.gsx$foder.$t+"/master/"+this.gsx$img.$t+".jpg'  style='width:100%;'/>");
+		  });
+
+		 });
+      //alert(name);
+    }
+    // Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+
     </div>
     </div>
   </header>
 
-<div class="w3-row-padding w3-margin-top">
-	<img class="lazy" data-src="https://farm2.staticflickr.com/1890/30529883368_3180a5b6f2_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1966/43154271560_4031bcb173_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1944/43154271110_8e28af1551_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1976/43154270630_848b4069de_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1961/43154270350_d27f53f680_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1936/31093870648_654101dbc4_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1928/31093870408_d726db33c1_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1966/31093870238_ac93396f4f_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1929/31093869548_92776cb087_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1979/31093869218_1388783060_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1961/43154267970_cef8a69faa_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1955/43154267680_2f2c504a0d_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1949/43154267310_92ae6d0ec9_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1914/43154266920_9ee7728c8a_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1921/43154266800_5ca4a83471_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1929/43154266600_d7c427b318_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1962/43154266500_6482a9eec0_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1968/43154266270_3dc01e7e96_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1966/43154266090_18480fbc93_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1924/43154265910_15f79ddf89_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1938/43154265750_4984dc1b6f_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1901/43154265540_d2b2a7a784_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1974/43154265300_c69e9a9dcb_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1967/43154265220_386af4f3f2_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1930/43154265030_89110d8c54_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1950/43154264850_7f0aac8b02_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1956/43154264560_402cb30e52_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1923/43154264310_9af2c084aa_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1955/43154264230_4b10e47b4d_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1902/43154264060_f291bf1582_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1946/31093856608_7bbab314e7_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1913/31093856028_3648072ff3_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1967/31093854678_45bf5aee52_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1939/31093854388_86d7a94b44_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1972/31093853428_0edee2eb2a_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1906/31093852608_9b134e23fc_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1959/31093852388_d3db0a82ae_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1937/31093851728_163db96247_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1948/44918135252_2ce06b75be_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1935/31093847808_9345b9db43_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1931/31093847448_0cbdc76d0e_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1926/31093846948_5093791168_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1913/44918132372_67aed861da_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1931/44918131832_67b01605eb_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1929/44918131572_e717bf0cc3_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1929/44918130212_e0cd80b9e0_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1954/44918129642_13668491af_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1926/44918128942_a975bcc73d_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1922/31093842328_075245512d_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1909/44918126892_aa18af5670_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1913/31093840958_78f764cf7e_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1930/44918125402_448b5fddac_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1922/31093839438_119d8e0c79_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1924/44918123382_a183f0ddaf_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1904/44918122332_37215f8af4_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1954/44918121062_dcfda18e7c_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1919/31093836188_61d081de33_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1916/44918118232_06722a628b_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1968/31093834438_00bfc4df84_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1932/31093833548_6eeaf70e6a_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1919/44918114402_e013f18085_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1980/44247240524_b8d3150253_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1971/44966604381_a583655fa7_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1952/44247237904_54365c4f30_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1934/44966601111_56b6b41f52_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1935/44247235314_6efa07ddc2_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1959/44966597781_025ec6577d_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1918/44247232314_48edee344d_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1916/44966593921_f4a40ce9ba_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1904/44247229604_16e72d03c1_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1932/44966590991_916dbfd705_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1972/44247227164_fd8ffd0934_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1951/44966588201_ce04c28d61_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1911/44247225014_0df0708b58_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1971/44966585531_4f973e4a3f_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1939/44247223184_74a9fd9b67_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1969/44966582851_62f39b1a08_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1970/44966580401_fc2e02808b_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1956/44966579381_ef2b4b34a8_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1931/31093817178_26ecc4de14_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1944/31093816048_a724bd8ed8_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1922/44966575661_2520e7853e_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1915/44966573931_c4cca1ecf4_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1944/31093812948_a2c4b866b5_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1942/44966570981_c38ca1714e_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1977/31093811728_bf0e2a60e7_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1949/44966568001_20f330d11d_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1921/44966566931_4602b17a14_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1904/44918084342_bc367d29f3_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1962/31093807798_d26e9acd75_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1917/44247209704_8af8c6742f_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1967/44918079852_bf91c7175f_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1926/31093804918_bec38f557e_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1925/43154218390_f51488114c_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1980/30029877297_d093a18d7a_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1933/43154216560_57991635cf_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1939/30029875447_aeb249f83d_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1901/43154214960_fa9d19becd_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1973/30029874087_ce3ec2f4fd_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1930/43154213410_2e0b6bc92d_b.jpg" style="width: 100%;" />
-  <img class="lazy" data-src="https://farm2.staticflickr.com/1973/30029872547_c53ac978fb_b.jpg" style="width: 100%;" />
-<!-- <div class="w3-third">
-<div class="w3-card">
-<img src="https://www.w3schools.com/w3css/img_5terre.jpg" style="width:100%">
-<div class="w3-container">
-<h4>5 Terre</h4>
-</div>
-</div>
-</div>
+  <div class="w3-row-padding w3-margin-top contents" id='abc'>
+	<!-- <img class='lazy' data-src='https://farm2.staticflickr.com/1890/30529883368_3180a5b6f2_b.jpg' style='width: 100%;' /> -->
 
-<div class="w3-third">
-<div class="w3-card">
-<img src="https://www.w3schools.com/w3css/img_monterosso.jpg" style="width:100%">
-<div class="w3-container">
-<h4>Monterosso</h4>
-</div>
-</div>
-</div>
 
-<div class="w3-third">
-<div class="w3-card">
-<img src="https://www.w3schools.com/w3css/img_vernazza.jpg" style="width:100%">
-<div class="w3-container">
-<h4>Vernazza</h4>
+</div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+    </div>
+  </div>
+<div class="footer">
+<div class="w3-tag w3-round w3-green" style="padding: 5px;">
+<div class="w3-tag w3-round w3-green w3-border w3-border-white">
+<a style="text-decoration: none;" style="padding: 5px;" href="#portfolio">Về đầu trang
+    </a>
 </div>
 </div>
-</div>
-<div class="w3-third">
-<div class="w3-card">
-<img src="https://www.w3schools.com/w3css/img_5terre.jpg" style="width:100%">
-<div class="w3-container">
-<h4>5 Terre</h4>
-</div>
-</div>
-</div>
+  </div>
 
-<div class="w3-third">
-<div class="w3-card">
-<img src="https://www.w3schools.com/w3css/img_monterosso.jpg" style="width:100%">
-<div class="w3-container">
-<h4>Monterosso</h4>
-</div>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="w3-card">
-<img src="https://www.w3schools.com/w3css/img_vernazza.jpg" style="width:100%">
-<div class="w3-container">
-<h4>Vernazza</h4>
-</div>
-</div>
-</div> -->
-</div>
 </body>
 </html>
