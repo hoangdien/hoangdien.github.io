@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .quiz-wrapper {
+  position: relative;
+  display: block;
+}
+.quiz-wrapper .options {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #9a9a9a;
+  margin: 0px 15px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+.quiz-wrapper .options span {
+  padding: 6px 8px;
+}
+.quiz-wrapper .options span.option {
+  position: relative;
+  z-index: 50;
+  font-size: 13px;
+}
+.quiz-wrapper .answers {
+  display: inline-block;
+  font-size: 13px;
+}
+.quiz-wrapper .answers li {
+  margin-top: 15px;
+}
+.quiz-wrapper .answers .target {
+  display: inline-block;
+  min-width: 80px;
+  padding: 0px 4px;
+  border-bottom: 1px dotted #212529;
+  margin: 0 3px;
+  text-align: center;
+  color: #4caf50;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="quiz-wrapper">
+<p>hay hugu</p>
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="options">
+    <span class="option" data-target="carraway">어른 앞에서 다리를 떨면 안 돼요</span>
+    <span class="option" data-target="fitz">어른 앞에서 다리를 떨면 안 돼요</span>
+    <span class="option" data-target="westegg">어른 앞에서 다리를 떨면 안 돼요</span>
+    <span class="option" data-target="buchanan">어른 앞에서 다리를 떨면 안 돼요</span>
+    <span class="option" data-target="ashes">어른 앞에서 다리를 떨면 안 돼요</span>      
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="answers">
+  <ol>
+    <li><span class="target" data-accept="fitz">&nbsp;</span>, a native of St Paul, Minnesota, and also a member of the "Lost Generation" finished four novels including "This Side of Paradise".</li>
+    <li><span class="target" data-accept="carraway">&nbsp;</span> attended Yale with the large and brooding<span class="target" data-accept="buchanan">&nbsp;</span>.</li>
+    <li>George Wilson owns an unsuccessful garage in an area known as the <span class="target" data-accept="ashes">&nbsp;</span>, where Tom brings Nick for a party.</li>
+    <li>Jay Gatsby, the Buchanans, and Nick himself all make<span class="target" data-accept="westegg">&nbsp;</span>their home.</li>
+  </ol>
+</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="options">
+		<span class="option" data-target="의사">Nick Carraway</span>
+		<span class="option" data-target="fitz1">F. Scott Fitzgerald</span>
+		<span class="option" data-target="westegg1">West Egg</span>
+		<span class="option" data-target="buchanan1">Tom Buchanan</span>
+		<span class="option" data-target="ashes1">Valley of Ashes</span>      
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="answers">
+  <ol>
+    <li><span class="target" data-accept="fitz1">&nbsp;</span>, a native of St Paul, Minnesota, and also a member of the "Lost Generation" finished four novels including "This Side of Paradise".</li>
+    <li><span class="target" data-accept="의사">&nbsp;</span> attended Yale with the large and brooding<span class="target" data-accept="buchanan1">&nbsp;</span>.</li>
+    <li>George Wilson owns an unsuccessful garage in an area known as the <span class="target" data-accept="ashes1">&nbsp;</span>, where Tom brings Nick for a party.</li>
+    <li>Jay Gatsby, the Buchanans, and Nick himself all make<span class="target" data-accept="westegg1">&nbsp;</span>their home.</li>
+  </ol>
+</div>
+  </div>
+</div>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script>
+<script  src="js/index.js"></script>
+</div>
+
+</div>
+
+</body>
+</html>
