@@ -1,0 +1,577 @@
+.jumbotron {
+	margin-bottom: 0;
+	border-radius: 0px;
+rem
+;
+}
+/**/
+
+.blog-listing {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.gray-bg {
+    background-color: #f5f5f5;
+}
+/* Blog 
+---------------------*/
+.blog-grid {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.blog-grid .blog-img {
+  position: relative;
+}
+.blog-grid .blog-img .date {
+  position: absolute;
+  background: #fc5356;
+  color: #ffffff;
+  padding: 8px 15px;
+  left: 10px;
+  top: 10px;
+  border-radius: 4px;
+}
+.blog-grid .blog-img .date span {
+  font-size: 22px;
+  display: block;
+  line-height: 22px;
+  font-weight: 700;
+}
+.blog-grid .blog-img .date label {
+  font-size: 14px;
+  margin: 0;
+}
+.blog-grid .blog-info {
+  padding: 20px;
+}
+.blog-grid .blog-info h5 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.blog-grid .blog-info h5 a {
+  color: #20247b;
+}
+.blog-grid .blog-info p {
+  margin: 0;
+}
+.blog-grid .blog-info .btn-bar {
+  margin-top: 20px;
+}
+
+
+/* Blog Sidebar
+-------------------*/
+.blog-aside .widget {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.blog-aside .widget-body {
+  padding: 15px;
+}
+.blog-aside .widget-title {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+.blog-aside .widget-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fc5356;
+  margin: 0;
+}
+.blog-aside .widget-author .media {
+  margin-bottom: 15px;
+}
+.blog-aside .widget-author p {
+  font-size: 16px;
+  margin: 0;
+}
+.blog-aside .widget-author .avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.blog-aside .widget-author h6 {
+  font-weight: 600;
+  color: #20247b;
+  font-size: 22px;
+  margin: 0;
+  padding-left: 20px;
+}
+.blog-aside .post-aside {
+  margin-bottom: 15px;
+}
+.blog-aside .post-aside .post-aside-title h5 {
+  margin: 0;
+}
+.blog-aside .post-aside .post-aside-title a {
+  font-size: 18px;
+  color: #20247b;
+  font-weight: 600;
+}
+.blog-aside .post-aside .post-aside-meta {
+  padding-bottom: 10px;
+}
+.blog-aside .post-aside .post-aside-meta a {
+  color: #6F8BA4;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 10px;
+}
+.blog-aside .latest-post-aside + .latest-post-aside {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.blog-aside .latest-post-aside .lpa-right {
+  width: 90px;
+}
+.blog-aside .latest-post-aside .lpa-right img {
+  border-radius: 3px;
+}
+.blog-aside .latest-post-aside .lpa-left {
+  padding-right: 15px;
+}
+.blog-aside .latest-post-aside .lpa-title h5 {
+  margin: 0;
+  font-size: 15px;
+}
+.blog-aside .latest-post-aside .lpa-title a {
+  color: #20247b;
+  font-weight: 600;
+}
+.blog-aside .latest-post-aside .lpa-meta a {
+  color: #6F8BA4;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tag-cloud a {
+  padding: 4px 15px;
+  font-size: 13px;
+  color: #ffffff;
+  background: #20247b;
+  border-radius: 3px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+.tag-cloud a:hover {
+  background: #fc5356;
+}
+
+.blog-single {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.article {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 15px;
+  margin: 15px 0 30px;
+}
+.article .article-title {
+  padding: 15px 0 20px;
+}
+.article .article-title h6 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.article .article-title h6 a {
+  text-transform: uppercase;
+  color: #fc5356;
+  border-bottom: 1px solid #fc5356;
+}
+.article .article-title h2 {
+  color: #20247b;
+  font-weight: 600;
+}
+.article .article-title .media {
+  padding-top: 15px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 20px;
+}
+.article .article-title .media .avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.article .article-title .media .media-body {
+  padding-left: 8px;
+}
+.article .article-title .media .media-body label {
+  font-weight: 600;
+  color: #fc5356;
+  margin: 0;
+}
+.article .article-title .media .media-body span {
+  display: block;
+  font-size: 12px;
+}
+.article .article-content h1,
+.article .article-content h2,
+.article .article-content h3,
+.article .article-content h4,
+.article .article-content h5,
+.article .article-content h6 {
+  color: #20247b;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.article .article-content blockquote {
+  max-width: 600px;
+  padding: 15px 0 30px 0;
+  margin: 0;
+}
+.article .article-content blockquote p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fc5356;
+  margin: 0;
+}
+.article .article-content blockquote .blockquote-footer {
+  color: #20247b;
+  font-size: 16px;
+}
+.article .article-content blockquote .blockquote-footer cite {
+  font-weight: 600;
+}
+.article .tag-cloud {
+  padding-top: 10px;
+}
+
+.article-comment {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 20px;
+}
+.article-comment h4 {
+  color: #20247b;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+img {
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+
+/*
+--------------------------------------------------------------
+Product Name: Golden - Responsive Flat Dropdown Menu
+Product Version: 1.0
+Author: Igga Elia (elflaire)
+Author URL: http://doptiq.com 
+Author Portifolio: http://codecanyon.net/user/elflaire/portfolio 
+E-mail: hello@doptiq.com 
+Updates: Initial Release - 28th/Aug/2013
+-------------------------------------------------------------- */
+
+/* Resets for Demo 
+------------------------------------------------- */
+html { 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%; 
+}
+
+
+html, body{ 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	font-size: 100%; 
+	vertical-align: baseline;
+}
+
+.menu { }
+.clear:before,.clear:after{content:'';display:table; }
+.clear:after{clear:both;}
+.clear{zoom:1;}
+
+/* Start Menu Styling 
+--------------------------------------------- */
+
+.nav{ 
+	height:49px; 
+	position:relative; 
+	z-index:999;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.nav ul, 
+.nav ol, 
+.nav dl, 
+.nav li { 
+	line-height:1.5em;
+	list-style:none; 
+}
+
+/* Hide responsive menu trigger 
+--------------------------------------------- */
+.menu-icon { display:none; }
+
+/* Start dropdown menu styling 
+--------------------------------------------- */
+ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul { 
+	margin: 0; 
+	padding: 0; 
+	
+}
+
+ul.dropdown{
+	float:left;
+	width:100%; 
+	position: relative; 
+}
+
+ul.dropdown li { 
+	float: left; 
+	vertical-align: middle; 
+	zoom: 1; /* IE6 */
+}
+
+/* General list styling 
+-------------------------------------------- */
+ul.dropdown li {  
+	font-size:15px; 
+	text-transform:uppercase; 
+}
+
+/* General links styling 
+-------------------------------------------- */
+ul.dropdown a,
+ul.dropdown a:visited,	
+ul.dropdown a:hover, 		
+ul.dropdown a:active { 
+	text-decoration: none; 
+}
+
+ul.dropdown a, 
+ul.dropdown span { 
+	display: block;
+	outline:none; 
+	cursor:pointer; 
+	padding:13px 15px; 
+}
+
+ul.dropdown ul a,
+ul.dropdown ul span {  
+	padding:12px 15px; 
+}	
+
+ul.dropdown li:hover, 
+ul.dropdown li.hover { 
+	position: relative; 
+	cursor:pointer; 
+}
+
+/* Level I+ 
+--------------------------------------- */
+ul.dropdown ul { 
+	display:none; 
+	position: absolute;
+	z-index: 598;
+	width: 220px; 
+	top: 100%; 
+	left: 0; 
+}
+
+ 
+ul.dropdown li:hover > ul{ 
+	display:block;
+}
+
+ul.dropdown ul li { 
+	float: none;
+	font-size:13px;
+	font-weight: normal; 
+	text-transform:none;
+	position:relative; 
+}
+
+ul.dropdown ul li.hover, 
+ul.dropdown ul li:hover { /* background-color:#1ABC9C; color: #fff; */ }
+ul.dropdown ul li a:hover { /* color: #fff; */ }
+	
+/* Level II +  
+---------------------------------------- */
+ul.dropdown ul ul { top:0; left:100%; }
+
+
+/* Add trailing arrows 
+---------------------------------------- */	
+ul.dropdown *.sub { 
+	padding-right:15px; 
+	background-image: url(../images/nav-arrow-down-thin.gif); 
+	background-position: 95% 50%; 
+	background-repeat: no-repeat; 
+}
+
+ul.dropdown ul *.sub { 
+	padding-right: 15px; 
+	background-image: url(../images/nav-arrow-right-thin.gif);
+	background-position: 100% 50%; 									  
+	background-repeat: no-repeat; 
+}
+
+/* Change trailing arrows on :hover IE7+
+--------------------------------------------------------- */
+ul.dropdown li.sub:hover{  background-image: url(../images/nav-arrow-down.gif); } 
+ul.dropdown ul li.sub:hover{ background-image: url(../images/nav-arrow-right.gif);  }
+
+/* Main menu seperator 
+---------------------------------------------- */																		  								  
+ul.dropdown li.divider{ 
+	padding:0!important; 
+	margin:0!important; 
+	border:0!important;
+	display:block; 
+	height:49px; 
+	float:left;
+	width:1px; 
+}
+
+ul.dropdown li.rtl ul { position: absolute; top: 100%; right:0; z-index: 598; left:auto; }
+ul.dropdown li.rtl ul ul { top:0; right:100%; left:auto; }
+ul.dropdown li.ltr ul, ul.dropdown li.ltr ul ul { top:0; left:100%!important; right:auto!important; }
+
+/* Theme settings - Change your menu colors, bgcolors, border-colors
+---------------------------------------------------------------------- */
+
+/* Theme green black */
+.green-black, 
+.green-black ul.dropdown { background:#1ABC9C; }
+.green-black ul.dropdown ul { background:#2C3E50; } 
+
+.green-black ul.dropdown a,
+.green-black ul.dropdown a:visited,	
+.green-black ul.dropdown a:hover, 		
+.green-black ul.dropdown a:active, 
+.green-black ul.dropdown li  { color: #fff; }
+
+.green-black ul.dropdown li:hover, 
+.green-black ul.dropdown li.hover {  background-color:#2C3E50; color: #fff; }
+.green-black ul.dropdown ul li {   border-bottom:1px solid #34495E;  }
+
+.green-black ul.dropdown ul li.hover, 
+.green-black ul.dropdown ul li:hover { background-color:#1ABC9C;  color: #fff; }
+.green-black ul.dropdown ul li a:hover { color: #fff; }
+.green-black ul.dropdown li.divider{ background:#00D9A3;  }
+
+
+/* Responsiveness 
+------------------------------------- */
+
+/* All device screens < = 768px */
+@media screen and (max-width: 768px) {
+
+/* Responsive menu trigger 
+------------------------------------ */
+.menu-icon, 
+.menu-icon span, 
+.menu-icon { 
+	color: #fff; 
+	width:100%; 
+	height:50px; 
+	line-height:40px; 
+	padding:5px; 
+	font-size:1.3em; 
+	font-weight:bold; 
+	cursor: pointer; 
+	display:block;
+	position:relative;	
+}
+
+.menu-icon span{ 
+	width: auto;
+	padding:0 15px;
+	padding-left:40px; 
+	height:40px; 
+	background:#26E1BC url(../images/nav-toggle.png) center no-repeat ; 
+	color:#FFFFFF;
+	text-align: center;
+	text-indent:-999em; 
+	display: inline-block;
+	position:absolute;
+	top:5px;
+	right:5px;
+	 
+}
+
+/* Style these as desired 
+ * - colors, bgclors etc 
+------------------------------- */
+.menu-icon:hover { }
+.menu-icon:hover span{ }
+.menu-icon.active { }
+.menu-icon.active span{ }
+
+
+/* Responsive menu styling  
+--------------------------------- */
+.nav{ position:relative;  }
+.nav,
+ul.dropdown, 
+.menu-icon, 
+.menu-icon span, 
+ul.dropdown *{ box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; } 	
+ul.dropdown{  display:none; position: relative; top:-1px; border-top:1px solid #00D9A3 ; }
+ul.dropdown  li { position:relative; float:none; display:block; border-bottom:1px solid #00D9A3 ;}
+ul.dropdown  li li{ border-top:0;}
+ul.dropdown  ul a{ padding-left:25px; }
+ul.dropdown  ul ul a{ padding-left:45px; }
+ul.dropdown  ul a:hover  { background-color:#34495E;}
+ul.dropdown  li.sub ul > li{ /*border-top:1px solid;*/ }
+ul.dropdown *.sub { padding:0!important; background-image: none!important; }
+ul.dropdown ul{ overflow: hidden; max-height: 0; width:auto; display:block; position: static; }
+ul.dropdown ul.current { display:block; max-height:100em; }
+ul.dropdown li.sub > a{ padding-right:25px; }
+ul.dropdown li.sub > a.current{ background:#16A085;  }
+ul.dropdown li.sub > ul a.current{ background:#1E2935;  }
+ul.dropdown li.sub > a:after, 
+ul.dropdown li.sub > a.current:after { position: absolute; top: 0; right: 0; display: block; font-size: 1.5em; padding: 0.55em 0.5em; }
+ul.dropdown li.sub > a:after { content: '\002B'; }	
+ul.dropdown li.sub > a.current:after { content: "\2013"; top:-2px; }	
+ul.dropdown li.rtl ul, 
+ul.dropdown li.ltr ul, 
+ul.dropdown li.ltr ul ul, 
+ul.dropdown li.rtl ul ul { position:static; }
+ul.dropdown li.divider{ display:none!important; }
+
+}
+
+/* All device screens >  768px */
+@media screen and (min-width: 769px) {
+	/* Avoid responsive menu hiding on browser window resize 
+	-------------------------------------------------------------- */
+	ul.dropdown{ display:block !important ; }
+	 
+}
