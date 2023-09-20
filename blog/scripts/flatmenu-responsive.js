@@ -2,7 +2,7 @@
 $(function() {
 		   
 	// main menu toggler
-	$('.nav').prepend('<div class="menu-icon"> <strong><img src="images/logo.png" alt="" style="height:25px"></strong><span>Menu</span></div>');
+	$('.nav').prepend('<div class="menu-icon"> <strong><img src="https://hoangdien.github.io/blog/images/logo.png" alt="" style="height:25px"></strong><span>Menu</span></div>');
 	$('.menu-icon').click(function(){						
 		$('ul.dropdown').slideToggle(600);
 		$(this).toggleClass("active");	
