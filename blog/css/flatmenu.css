@@ -335,7 +335,7 @@ ul.dropdown *.sub { padding:0!important; background-image: none!important; }
 ul.dropdown ul{ overflow: hidden; max-height: 0; width:auto; display:block; position: static; }
 ul.dropdown ul.current { display:block; max-height:100em; }
 ul.dropdown li.sub > a{ padding-right:25px; }
-ul.dropdown li.sub > a.current{ background:#27AE60;  }
+ul.dropdown li.sub > a.current{ background:#5bdaec;  }
 ul.dropdown li.sub > ul a.current{ background:#1E2935;  }
 ul.dropdown li.sub > a:after, 
 ul.dropdown li.sub > a.current:after { position: absolute; top: 0; right: 0; display: block; font-size: 1.5em; padding: 0.55em 0.5em; }
