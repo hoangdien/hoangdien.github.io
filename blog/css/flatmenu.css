@@ -137,7 +137,7 @@ ul.dropdown ul li {
 }
 
 ul.dropdown ul li.hover, 
-ul.dropdown ul li:hover { /* background-color:#2ECC71; color: #fff; */ }
+ul.dropdown ul li:hover { /* background-color:#5bdaec; color: #fff; */ }
 ul.dropdown ul li a:hover { /* color: #fff; */ }
 	
 /* Level II +  
@@ -249,7 +249,7 @@ ul.dropdown li.ltr ul, ul.dropdown li.ltr ul ul { top:0; left:100%!important; ri
 
 /* Theme emerald black */
 .emerald-black, 
-.emerald-black ul.dropdown { background:#2ECC71; }
+.emerald-black ul.dropdown { background:#5bdaec; }
 .emerald-black ul.dropdown ul { background:#2C3E50; } 
 
 .emerald-black ul.dropdown a,
@@ -263,9 +263,9 @@ ul.dropdown li.ltr ul, ul.dropdown li.ltr ul ul { top:0; left:100%!important; ri
 .emerald-black ul.dropdown ul li {   border-bottom:1px solid #34495E;  }
 
 .emerald-black ul.dropdown ul li.hover, 
-.emerald-black ul.dropdown ul li:hover { background-color:#2ECC71;  color: #fff; }
+.emerald-black ul.dropdown ul li:hover { background-color:#5bdaec;  color: #fff; }
 .emerald-black ul.dropdown ul li a:hover { color: #fff; }
-.emerald-black ul.dropdown li.divider{ background:#4AD786;  }
+.emerald-black ul.dropdown li.divider{ background:#8fe5f4;  }
 
 
 /* Responsiveness 
@@ -296,7 +296,7 @@ ul.dropdown li.ltr ul, ul.dropdown li.ltr ul ul { top:0; left:100%!important; ri
 	padding:0 15px;
 	padding-left:40px; 
 	height:40px; 
-	background:#59DB91 url(../images/nav-toggle.png) center no-repeat ; 
+	background:#8fe5f4 url(../images/nav-toggle.png) center no-repeat ; 
 	color:#FFFFFF;
 	text-align: center;
 	text-indent:-999em; 
@@ -324,8 +324,8 @@ ul.dropdown,
 .menu-icon, 
 .menu-icon span, 
 ul.dropdown *{ box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; } 	
-ul.dropdown{  display:none; position: relative; top:-1px; border-top:1px solid #4AD786 ; }
-ul.dropdown  li { position:relative; float:none; display:block; border-bottom:1px solid #4AD786 ;}
+ul.dropdown{  display:none; position: relative; top:-1px; border-top:1px solid #8fe5f4 ; }
+ul.dropdown  li { position:relative; float:none; display:block; border-bottom:1px solid #8fe5f4 ;}
 ul.dropdown  li li{ border-top:0;}
 ul.dropdown  ul a{ padding-left:25px; }
 ul.dropdown  ul ul a{ padding-left:45px; }
